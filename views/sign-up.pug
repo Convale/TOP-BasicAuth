@@ -1,0 +1,17 @@
+extends layout
+
+block content
+  h1= title
+  
+    div(style='margin-left:20px;margin-top:20px')
+
+  h4 Sign Up
+
+  form(method='POST' action='')
+    div.form-group
+      label(for='userUsername') Username: 
+      input#user.form-control(type='text' name='userUsername' required='true' )
+    div.form-group
+      label(for='userPass') Password: 
+      input#message.form-control(type='text' name='userPass' required='true' )
+    button.btn.btn-primary(type='submit') Sign Up
